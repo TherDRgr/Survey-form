@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --main-color: #7394ff;
+  --black: #45454b;
+  --bg: #000819;
+  --border: 1em solid rgba(35, 35, 35, 0.335);
+  --text-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 1.25em;
+  overflow-x: hidden;
+  scroll-padding-top: 9em;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5em;
+}
+
+body {
+  background-color: #000819;
+  background-size: cover;
+  max-width: 100%;
+}
+
+/* header start */
+
+.header {
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25em 5%;
+  border-bottom: var(--border);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 4em;
+}
+
+.mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+.mainMenu a {
+  display: inline-block;
+  padding: 0.9em;
+  margin: 0 0.75em;
+  font-size: 1.3em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mainMenu a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+}
+
+.openMenu {
+  font-size: 2em;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.closeMenu,
+.icons i {
+  font-size: 2em;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: #003fed;
+}
+.fa-twitter:hover {
+  color: #2bc3ff;
+}
+.fa-instagram:hover {
+  color: #ff0051;
+}
+
+.icons {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* header end */
+
+/* home start */
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: url(LegionWallpaper4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.content h1 {
+  font-size: 10em;
+  align-content: center;
+}
+
+.content h4 {
+  font-size: 5em;
+}
+
+#lenovo1 {
+  width: 70em;
+  padding-bottom: 10em;
+}
+
+#homeDesc {
+  align-content: center;
+  padding-top: 5em;
+  width: 50em;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 2em;
+  font-size: 1em;
+}
+
+/* home end */
+
+/* why start */
+
+.why {
+  display: grid;
+  grid-template-rows: 0.25fr 1fr 0.2fr;
+  align-content: center;
+  justify-content: center;
+}
+
+.why {
+  color: var(--text-color);
+  justify-items: center;
+  align-items: flex-end;
+}
+
+.why h3 {
+  padding-top: 0.5em;
+  font-size: 3em;
+  height: 3em;
+}
+
+/* why end */
+
+/* Specs start */
+
+.specs {
+  display: grid;
+  grid-template-columns: 0.25fr;
+  grid-template-rows: 0.25fr 0.25fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.spectitle {
+  display: grid;
+  color: var(--text-color);
+  font-size: 4em;
+  justify-content: center;
+}
+
+.specs li {
+  color: var(--text-color);
+  width: 100%;
+  list-style: circle;
+  line-height: 2em;
+}
+
+/* Specs end */
+
+/* Account Login Start */
+
+.account {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background: url(LegionWallpaper2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.details {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #707070;
+  border: 10px solid rgb(68, 68, 68);
+  padding: 2em;
+  margin: 2em;
+}
+
+.details h2 {
+  color: var(--text-color);
+  justify-self: center;
+  padding-bottom: 1em;
+}
+
+/* Account Login End */
+
+/* contact form start */
+.contact {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h3 {
+  color: var(--text-color);
+  font-size: 3em;
+  justify-self: center;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+form {
+  width: 40em;
+}
+
+.input-group {
+  width: 60em;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  position: relative;
+}
+
+input,
+textarea {
+  width: 40em;
+  padding: 0.8em;
+  outline: 0;
+  border: 1px solid #fff;
+  color: var(--text-color);
+  background: transparent;
+  font-size: 1em;
+}
+
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1em;
+  color: var(--text-color);
+  cursor: text;
+  transition: 0.2s;
+}
+
+button {
+  padding: 0.8em 0;
+  color: var(--text-color);
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 40em;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -2.5em;
+  font-size: 0.8em;
+}
+
+/* contact form end */
+
+/* media query start */
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 90%;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  #video {
+    height: 680px;
+    width: 100%;
+  }
+
+  #GIF {
+    height: 600px;
+    width: 800px;
+  }
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .home {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #lenovo1 {
+    height: 80%;
+    width: 80%;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  #video {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #GIF {
+    height: 380px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 360px) {
+  .html {
+    font-size: 30%;
+  }
+
+  form {
+    width: 30%;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.45fr 0.5fr;
+    background: url(TechnoWallpaper.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .content {
+    padding-top: 0;
+    font-size: 0.6em;
+  }
+
+  .specs {
+    grid-template-rows: 0.25fr;
+  }
+
+  .header {
+    padding: 1em 2em;
+  }
+
+  #lenovo1 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  #LegionWM {
+    height: 3em;
+  }
+
+  #video {
+    height: 200px;
+    width: 360px;
+    object-fit: cover;
+  }
+
+  #GIF {
+    height: 20em;
+    width: 30em;
+  }
+
+  .spectitle {
+    font-size: 1.5em;
+  }
+
+  .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .openMenu {
+    display: block;
+  }
+
+  .mainMenu a:hover {
+    background: none;
+    color: var(--main-color);
+    font-size: 1.5em;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}

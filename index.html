@@ -1,22 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coding Challenge 2</title>
+    <title>Lenovo Legion 5i</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   </head>
   <body>
-    <label>
-      Choose a fruit:
-      <select class="fruit" name="fruit">
-        <option value="">Select One …</option>
-        <option value="Apple">Apple</option>
-        <option value="Banana">Banana</option>
-        <option value="Orange">Orange</option>
-      </select>
-    </label>
-    <div class="result"></div>
-    <script id="./script.js"></script>
+    <!--Header Start-->
+    <nav class="header">
+      <a href="https://www.lenovo.com/ph/en/pc" class="logo">
+        <img src="LogoLenovo.png" />
+      </a>
+        <div class="openMenu"><i class="fas fa-bars"></i></div>
+        <ul class="mainMenu">
+          <a href="#home">Home</a>
+          <a href="#why">Legion</a>
+          <a href="#specs">Features</a>
+          <a href="contact.html">Contact Us</a>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <span class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </span>
+        </ul>
+      </div>
+    </nav>
+    <!--Header End-->
+
+    <!-- Home Section Start-->
+    <div class="home" id="home">
+      <div class="content">
+        <h1>LEGION 5i</h1>
+        <h4>Stylish Outside.</h4>
+        <h4>Savage Inside.</h4>
+        <p id="homeDesc">
+          Discover Lenovo Legion's cutting-edge gaming PCs and gear. Conquer the
+          E-Sports arena with Legion 5i (15", Gen 7). Equipped with Up to 12th
+          Gen Intel® Core™ i7, WQHD IPS, 300nits, 165Hz refresh rate, 100% sRGB.
+          The true intersesction of minimalism and raw power, own the room and
+          the leadeboard with Legion 5 series.
+        </p>
+      </div>
+      <img src="LenovoHero.png" id="lenovo1" />
+    </div>
+    <!--Home Section End-->
+
+    <!--why Section Start-->
+    <div class="why" id="why">
+      <img src="LegionWordmarkResize.png" id="LegionWM" />
+      <video width="1920" height="1080" controls id="video">
+        <source src="LenovoVideo.mp4" type="video/mp4" id="LenovoVid" />
+      </video>
+      <h3>Why do you play?</h3>
+    </div>
+    <!--why Section End-->
+
+    <!--Specs Section Start-->
+    <div class="spectitle" id="specs">
+      <h2>What makes Legion the Best?</h2>
+    </div>
+    <div class="specs">
+      <div class="Gif">
+        <img src="LegionMainGIF.gif" id="GIF" />
+        <ul>
+          <li>
+            One of the few gaming Laptops designed with high-performance
+            options, whilst maintaining a low profile for a cleaner and
+            minimalistic approach that complements your lifestyle.
+          </li>
+          <li>
+            Stay cool and controlled, equipped with Coldfront 2.0, that will
+            surely make your CPU and GPU don't sweat at heavy professional
+            rendering and heavy game titles, truly engineered to game.
+          </li>
+          <li>
+            A thin bezel screen making a sleek look and a lighter weight,
+            providing a beastly performance while maintaining a cool components,
+            but ofcourse, a gaming Laptop wouldn't be complete without RGB.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Specs Section End-->
+
+    <!--Contact Section Start-->
+      <!--Contact Section End-->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

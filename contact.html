@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <nav class="header">
+      <a href="https://www.lenovo.com/ph/en/pc" class="logo">
+        <img src="LogoLenovo.png" />
+      </a>
+      <ul class="mainMenu">
+        <a href="index.html">Return</a>
+    </nav>
+    <div class="contact" id="contact">
+      
+      <h3>Got Any Concerns?</h3>
+
+      <form action="acknowledgement.html" method="get">
+        <div class="input-group">
+          <input autocomplete="off" type="text" name="name" required />
+          <label for="name"><i class="fas fa-user"></i> Your Name </label>
+        </div>
+        <div class="input-group">
+          <input autocomplete="off" type="text" name="number" required />
+          <label for="number"
+            ><i class="fas fa-phone-square-alt"></i> Phone No.
+          </label>
+        </div>
+        <div class="input-group">
+          <input autocomplete="off" type="email" name="email" required />
+          <label for="email"><i class="fas fa-envelope"></i> Email Id </label>
+        </div>
+        <div class="input-group">
+          <textarea name="message" rows="8" required></textarea>
+          <label for="message"
+            ><i class="fas fa-comments"></i> Your Message</label
+          >
+        </div>
+        <button type="submit">SUBMIT<i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </body>
+</html>

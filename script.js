@@ -1,18 +1,15 @@
-document.body.innerHTML = 
-`
-    <label>
-      Choose a fruit:
-      <select class="fruit" name="fruit">
-        <option value="">Select One …</option>
-        <option value="Apple">Apple</option>
-        <option value="Banana">Banana</option>
-        <option value="Orange">Orange</option>
-      </select>
-    </label>
-    <div class="result"></div>
-`
-const fruit = document.querySelector('.fruit');
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-fruit.addEventListener('change', function(event){
-  const result = document.querySelector('.result');
-  result.textContent = `You chose ${event.target.value}`; });
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top ='0';
+}
+
+function close(){
+    mainMenu.style.top = '-100%';
+}
